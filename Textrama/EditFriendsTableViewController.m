@@ -76,8 +76,10 @@
     PFUser *user = [self.allUsers objectAtIndex:indexPath.row];
     
     if ([self isFriend:user]) {
+        // 1. Remove the checkmark
         cell.accessoryType = UITableViewCellAccessoryNone;
         
+        // 2. Remove from the array of friends
         for(PFUser *friend in self.friends) {
             if ([friend.objectId isEqualToString:user.objectId]) {
                 [self.friends removeObject:friend];
@@ -85,8 +87,10 @@
             }
         }
         
+        // 3. Remove from backend
         [friendsRelation removeObject:user];
     }
+    
     else {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
         [self.friends addObject:user];

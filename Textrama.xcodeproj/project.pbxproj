@@ -21,10 +21,17 @@
 		FD09B2731A36310800C89BC9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD09B2691A36310800C89BC9 /* Security.framework */; };
 		FD09B2741A36310800C89BC9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD09B26A1A36310800C89BC9 /* StoreKit.framework */; };
 		FD09B2751A36310800C89BC9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD09B26B1A36310800C89BC9 /* SystemConfiguration.framework */; };
+		FD2F5ADB1A546F4000DFF686 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2F5ADA1A546F4000DFF686 /* CameraViewController.m */; };
 		FD69430F1A3BEF8500786BE1 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD69430E1A3BEF8500786BE1 /* LoginViewController.m */; };
 		FD6943121A3BEF9700786BE1 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6943111A3BEF9700786BE1 /* SignupViewController.m */; };
 		FD87AB5E1A3D076F009C3237 /* EditFriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD87AB5D1A3D076F009C3237 /* EditFriendsTableViewController.m */; };
 		FDA9B96C1A3D820C003FB02D /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA9B96B1A3D820C003FB02D /* FriendsViewController.m */; };
+		FDD9649F1A577F1500F0DE3B /* icon_image.png in Resources */ = {isa = PBXBuildFile; fileRef = FDD9649B1A577F1500F0DE3B /* icon_image.png */; };
+		FDD964A01A577F1500F0DE3B /* icon_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDD9649C1A577F1500F0DE3B /* icon_image@2x.png */; };
+		FDD964A11A577F1500F0DE3B /* icon_video.png in Resources */ = {isa = PBXBuildFile; fileRef = FDD9649D1A577F1500F0DE3B /* icon_video.png */; };
+		FDD964A21A577F1500F0DE3B /* icon_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDD9649E1A577F1500F0DE3B /* icon_video@2x.png */; };
+		FDD964A51A57BE4D00F0DE3B /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD964A41A57BE4D00F0DE3B /* ImageViewController.m */; };
+		FDD964A71A57C98E00F0DE3B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD964A61A57C98E00F0DE3B /* MediaPlayer.framework */; };
 		FDEAD15D1A34D76A0000AB44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD15C1A34D7690000AB44 /* main.m */; };
 		FDEAD1601A34D76A0000AB44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD15F1A34D76A0000AB44 /* AppDelegate.m */; };
 		FDEAD1691A34D76A0000AB44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEAD1671A34D76A0000AB44 /* Main.storyboard */; };
@@ -65,6 +72,8 @@
 		FD09B2691A36310800C89BC9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		FD09B26A1A36310800C89BC9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		FD09B26B1A36310800C89BC9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FD2F5AD91A546F4000DFF686 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		FD2F5ADA1A546F4000DFF686 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		FD69430D1A3BEF8500786BE1 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		FD69430E1A3BEF8500786BE1 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		FD6943101A3BEF9700786BE1 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
@@ -73,6 +82,13 @@
 		FD87AB5D1A3D076F009C3237 /* EditFriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditFriendsTableViewController.m; sourceTree = "<group>"; };
 		FDA9B96A1A3D820C003FB02D /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
 		FDA9B96B1A3D820C003FB02D /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		FDD9649B1A577F1500F0DE3B /* icon_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_image.png; sourceTree = "<group>"; };
+		FDD9649C1A577F1500F0DE3B /* icon_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_image@2x.png"; sourceTree = "<group>"; };
+		FDD9649D1A577F1500F0DE3B /* icon_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_video.png; sourceTree = "<group>"; };
+		FDD9649E1A577F1500F0DE3B /* icon_video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_video@2x.png"; sourceTree = "<group>"; };
+		FDD964A31A57BE4D00F0DE3B /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		FDD964A41A57BE4D00F0DE3B /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		FDD964A61A57C98E00F0DE3B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		FDEAD1571A34D7690000AB44 /* Textrama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Textrama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEAD15B1A34D7690000AB44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDEAD15C1A34D7690000AB44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD964A71A57C98E00F0DE3B /* MediaPlayer.framework in Frameworks */,
 				FD09B26C1A36310800C89BC9 /* AudioToolbox.framework in Frameworks */,
 				FD09B26D1A36310800C89BC9 /* CFNetwork.framework in Frameworks */,
 				FD09B26E1A36310800C89BC9 /* CoreGraphics.framework in Frameworks */,
@@ -129,6 +146,7 @@
 		FD09B2761A36315300C89BC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FDD964A61A57C98E00F0DE3B /* MediaPlayer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -172,9 +190,13 @@
 				FDEAD18F1A34D8170000AB44 /* Images */,
 				FDEAD15E1A34D76A0000AB44 /* AppDelegate.h */,
 				FDEAD15F1A34D76A0000AB44 /* AppDelegate.m */,
+				FDD964A31A57BE4D00F0DE3B /* ImageViewController.h */,
+				FDD964A41A57BE4D00F0DE3B /* ImageViewController.m */,
 				FDEAD1671A34D76A0000AB44 /* Main.storyboard */,
 				FD87AB5C1A3D076F009C3237 /* EditFriendsTableViewController.h */,
 				FD87AB5D1A3D076F009C3237 /* EditFriendsTableViewController.m */,
+				FD2F5AD91A546F4000DFF686 /* CameraViewController.h */,
+				FD2F5ADA1A546F4000DFF686 /* CameraViewController.m */,
 				FDA9B96A1A3D820C003FB02D /* FriendsViewController.h */,
 				FDA9B96B1A3D820C003FB02D /* FriendsViewController.m */,
 				FD6943101A3BEF9700786BE1 /* SignupViewController.h */,
@@ -222,6 +244,10 @@
 				FDEAD1831A34D8100000AB44 /* camera.png */,
 				FDEAD1841A34D8100000AB44 /* camera@2x.png */,
 				FDEAD1851A34D8100000AB44 /* friends.png */,
+				FDD9649B1A577F1500F0DE3B /* icon_image.png */,
+				FDD9649C1A577F1500F0DE3B /* icon_image@2x.png */,
+				FDD9649D1A577F1500F0DE3B /* icon_video.png */,
+				FDD9649E1A577F1500F0DE3B /* icon_video@2x.png */,
 				FDEAD1861A34D8100000AB44 /* friends@2x.png */,
 				FDEAD1871A34D8100000AB44 /* inbox.png */,
 				FDEAD1881A34D8100000AB44 /* inbox@2x.png */,
@@ -309,15 +335,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD964A11A577F1500F0DE3B /* icon_video.png in Resources */,
 				FDEAD1691A34D76A0000AB44 /* Main.storyboard in Resources */,
 				FDEAD18B1A34D8100000AB44 /* friends.png in Resources */,
+				FDD9649F1A577F1500F0DE3B /* icon_image.png in Resources */,
 				FDEAD18C1A34D8100000AB44 /* friends@2x.png in Resources */,
 				FDEAD18A1A34D8100000AB44 /* camera@2x.png in Resources */,
 				FDEAD18D1A34D8100000AB44 /* inbox.png in Resources */,
 				FDEAD16E1A34D76A0000AB44 /* LaunchScreen.xib in Resources */,
+				FDD964A01A577F1500F0DE3B /* icon_image@2x.png in Resources */,
 				FDEAD1891A34D8100000AB44 /* camera.png in Resources */,
 				FDEAD16B1A34D76A0000AB44 /* Images.xcassets in Resources */,
 				FDEAD18E1A34D8100000AB44 /* inbox@2x.png in Resources */,
+				FDD964A21A577F1500F0DE3B /* icon_video@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,10 +366,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD69430F1A3BEF8500786BE1 /* LoginViewController.m in Sources */,
+				FD2F5ADB1A546F4000DFF686 /* CameraViewController.m in Sources */,
 				FDEAD1921A34E4280000AB44 /* InboxTableViewController.m in Sources */,
 				FDA9B96C1A3D820C003FB02D /* FriendsViewController.m in Sources */,
 				FD87AB5E1A3D076F009C3237 /* EditFriendsTableViewController.m in Sources */,
 				FDEAD1601A34D76A0000AB44 /* AppDelegate.m in Sources */,
+				FDD964A51A57BE4D00F0DE3B /* ImageViewController.m in Sources */,
 				FDEAD15D1A34D76A0000AB44 /* main.m in Sources */,
 				FD6943121A3BEF9700786BE1 /* SignupViewController.m in Sources */,
 			);

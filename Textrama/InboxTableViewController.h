@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <MediaPlayer/MediaPlayer.h>
+#import <Parse/Parse.h>
 @interface InboxTableViewController : UITableViewController
 
+@property (nonatomic, strong) NSArray *messages;
+@property (nonatomic, strong) PFObject *selectedMesaage;
+@property (nonatomic, strong) MPMoviePlayerController *moviePlayer;
 
 - (IBAction)signout:(id)sender;
 
