@@ -13,6 +13,8 @@
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Bfb-0k-MOb" kind="relationship" relationship="viewControllers" id="gDq-k0-mfd"/>
@@ -136,6 +138,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Inbox" id="bk6-LX-4Nh">
                         <barButtonItem key="rightBarButtonItem" title="Sign Out" id="ycA-zb-Wsh">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="signout:" destination="0kc-PM-oc8" id="FN4-cr-mrM"/>
                             </connections>
@@ -261,12 +264,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QXn-i1-ARB">
-                                <rect key="frame" x="16" y="125" width="288" height="30"/>
+                                <rect key="frame" x="16" y="199" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wae-UJ-zdU">
-                                <rect key="frame" x="16" y="235" width="288" height="35"/>
+                                <rect key="frame" x="16" y="309" width="288" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -277,15 +280,24 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tvy-Ea-dal">
-                                <rect key="frame" x="16" y="175" width="288" height="30"/>
+                                <rect key="frame" x="16" y="249" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZmX-J7-gsq">
-                                <rect key="frame" x="16" y="78" width="288" height="30"/>
+                                <rect key="frame" x="16" y="152" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFm-xu-ZrG">
+                                <rect key="frame" x="258" y="85" width="46" height="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss:" destination="YV1-Cb-h4f" eventType="touchUpInside" id="Gkp-RE-6Nq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -304,7 +316,7 @@
         <scene sceneID="Gnz-Kv-UND">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bfb-0k-MOb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Inbox" image="inbox.png" id="QJb-W8-oRU"/>
+                    <tabBarItem key="tabBarItem" title="Inbox" image="inbox2.png" id="QJb-W8-oRU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ShD-Lg-oE0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -323,7 +335,7 @@
         <scene sceneID="dUA-zi-Udb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9T2-le-Q7n" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Friends" image="friends.png" id="EQw-vB-Qco"/>
+                    <tabBarItem key="tabBarItem" title="Friends" image="friends2.png" id="EQw-vB-Qco"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hhf-fO-nDb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -342,7 +354,7 @@
         <scene sceneID="tXP-4g-zK9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P1Y-xh-eYQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Camera" image="camera.png" id="2pR-Zb-e4A"/>
+                    <tabBarItem key="tabBarItem" title="Camera" image="camera2.png" id="2pR-Zb-e4A"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="reg-U8-DO6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -359,9 +371,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="camera.png" width="33" height="24"/>
-        <image name="friends.png" width="40" height="24"/>
-        <image name="inbox.png" width="32" height="21"/>
+        <image name="camera2.png" width="26" height="26"/>
+        <image name="friends2.png" width="24" height="24"/>
+        <image name="inbox2.png" width="26" height="26"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

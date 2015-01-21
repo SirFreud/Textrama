@@ -18,10 +18,17 @@
 {
     [super viewDidLoad];
     
-    self.friendsRelation = [[PFUser currentUser] objectForKey:@"friendsRelation"];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
+    
+    [self.navigationController.navigationBar setHidden:NO];
+    self.navigationController.navigationBar.translucent = NO;
+    [self.navigationController.navigationBar setBarTintColor:[UIColor redColor]];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    
+    self.friendsRelation = [[PFUser currentUser] objectForKey:@"friendsRelation"];
     PFQuery *query = [self.friendsRelation query];
     [query orderByAscending:@"username"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {

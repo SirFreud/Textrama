@@ -20,16 +20,26 @@
     
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
-        NSLog(@"current user: %@", currentUser.username);
+        NSLog(@"Current user: %@", [PFUser currentUser]);
     } else {
         [self performSegueWithIdentifier:@"showLogin" sender:self];
     }
-
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    [self.navigationController.navigationBar setHidden:NO];
+    self.navigationController.navigationBar.translucent = NO;
+    [self.navigationController.navigationBar setBarTintColor:[UIColor redColor]];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    
+    [self retrieveMessages];
+
+    }
+    
+-(void)retrieveMessages {
     PFQuery *query = [PFQuery queryWithClassName:@"Messages"];
     [query whereKey:@"recipientIds" equalTo:[[PFUser currentUser] objectId]];
     [query orderByDescending:@"createdAt"];
@@ -44,8 +54,8 @@
             NSLog(@"Retrived %d messages", [self.messages count]);
         }
     }];
-    
 }
+
 
 
 #pragma mark - Table view data source

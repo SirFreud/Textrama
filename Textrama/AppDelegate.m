@@ -21,6 +21,8 @@
     
     [Parse setApplicationId:@"rZOQwUGaMM9nYZ3vGSKwJW88vc0dqFzWYcuZCa7i"
                   clientKey:@"oGKPFOUTwhheM5wZnxksPfXXGcFkGEGDSOpi8dMN"];
+    [self customizeInterface];
+    
     return YES;
 }
 
@@ -46,4 +48,22 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+-(void)customizeInterface {
+    // Customize Nav Bar
+
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithWhite:1.0f alpha:1.0f]];
+
+//    [self.navigationController.navigationBar setHidden:NO];
+//    [self.navigationController.navigationBar setBarTintColor:[UIColor redColor]];
+//    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+//    self.navigationController.navigationBar.translucent = NO;
+//    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+//    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSFontAttributeName, nil]];
+// Customize Tab Bar
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    UITabBar *tabBar = tabBarController.tabBar;
+    tabBarController.tabBar.tintColor = [UIColor colorWithWhite:1.0f alpha:1.0f];
+    [[UITabBar appearance] setTintColor:[UIColor redColor]];
+    
+}
 @end
